@@ -67,7 +67,7 @@ function dice5(){
     let counter3 = 0;
     for(let k=0; k<6; k++) {
         if (arr[k] == 3) {
-            counter3 += 1;
+            counter3 += 3;
         }
     document.getElementById("Threes").innerHTML=counter3;
     }
@@ -75,7 +75,7 @@ function dice5(){
     let counter4 = 0;
     for(let t=0; t<6; t++) {
         if (arr[t] == 4) {
-            counter4 += 1;
+            counter4 += 4;
         }
     document.getElementById("Fours").innerHTML=counter4;
     }
@@ -83,15 +83,15 @@ function dice5(){
     let counter5 = 0;
     for(let e=0; e<6; e++) {
         if (arr[e] == 5) {
-            counter5 += 1;
+            counter5 += 5;
         }
     document.getElementById("Fives").innerHTML=counter5;
     }
 
     let counter6 = 0;
-    for(let w=0; w<6; i++) {
+    for(let w=0; w<6; w++) {
         if (arr[w] == 6) {
-            counter6 += 1;
+            counter6 += 6;
         }
     document.getElementById("Sixes").innerHTML=counter6;
     }
