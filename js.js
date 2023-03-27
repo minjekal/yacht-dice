@@ -36,7 +36,7 @@ function dice5(){
     dice5();
 
     // 버튼클릭 1번으로 제한 //
-    if (buttonclick == 1) {
+    if (buttonclick == 3) {
         const target = document.getElementById("push dice");
         target.disabled = true;
     }
@@ -94,5 +94,33 @@ function dice5(){
             counter6 += 6;
         }
     document.getElementById("Sixes").innerHTML=counter6;
-    }
 }
+}
+
+function click1() {
+    document.getElementById("img1").style.display="none";
+    document.getElementById("img6").src="dice"+number1+".png";
+    document.getElementById("Aces").innerHTML=1;
+
+}
+
+function click2() {
+    document.getElementById("img2").style.display="none";
+    document.getElementById("img7").src="dice"+number2+".png";
+}
+
+function click3() {
+    document.getElementById("img3").style.display="none";
+    document.getElementById("img8").src="dice"+number3+".png";
+}
+
+function click4() {
+    document.getElementById("img4").style.display="none";
+    document.getElementById("img9").src="dice"+number4+".png";
+}
+
+function click5() {
+    document.getElementById("img5").style.display="none";
+    document.getElementById("img10").src="dice"+number5+".png";
+}
+
