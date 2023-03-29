@@ -4,44 +4,27 @@ let buttonclick =0;
 // 푸쉬 버튼 눌렀을 떄 //
 function push(){
 // 주사위 굴리는 함수 //
-function dice1(){
+function dice(){
     let dicenumber1 = Math.ceil(Math.random()*6);
     document.getElementById("img1").src="dice"+dicenumber1+".png"; 
     number1 = dicenumber1;
-}
-function dice2(){
     let dicenumber2 = Math.ceil(Math.random()*6);
     document.getElementById("img2").src="dice"+dicenumber2+".png"; 
     number2 = dicenumber2;
-}
-function dice3(){
     let dicenumber3 = Math.ceil(Math.random()*6);
     document.getElementById("img3").src="dice"+dicenumber3+".png"; 
     number3 = dicenumber3;
-}
-function dice4(){
     let dicenumber4 = Math.ceil(Math.random()*6);
     document.getElementById("img4").src="dice"+dicenumber4+".png"; 
     number4 = dicenumber4;
-}
-function dice5(){
     let dicenumber5 = Math.ceil(Math.random()*6);
     document.getElementById("img5").src="dice"+dicenumber5+".png"; 
     number5 = dicenumber5;
 }
     buttonclick +=1;
-    dice1();
-    dice2();
-    dice3();
-    dice4();
-    dice5();
+    dice();
 
     // 버튼클릭 1번으로 제한 //
-    if (buttonclick == 3) {
-        const target = document.getElementById("push dice");
-        target.disabled = true;
-    }
-    
 }
 
 function click1() {
@@ -130,3 +113,9 @@ for(let w=0; w<6; w++) {
 document.getElementById("Sixes").innerHTML=counter6;
 }
 }
+
+function hi(){
+        const button = document.getElementById("push dice");
+        button.disabled = false;
+        document.getElementById("Aces").innerHTML=counter1;
+    }
